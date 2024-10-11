@@ -231,3 +231,31 @@ h2 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
 }
 
+.contacts {
+    padding: 20px;
+    background-color: #f0f0f5;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contacts h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.icon-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon-links a {
+    font-size: 2em; 
+    color: #eef0f8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.icon-links a:hover {
+    color: #fc5c7d;
+}
