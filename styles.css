@@ -179,3 +179,55 @@ footer {
     border-radius: 5px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
+
+
+.parallax {
+    background-image: url('foto/parallax_1.webp');
+    height: 200px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px; 
+}
+
+
+.accordion-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+h2::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #6a82fb; 
+    margin: 10px auto;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #fc5c7d; 
+    margin: 10px auto;
+}
+
+h2 {
+    animation: fadeIn 1s ease-out;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
