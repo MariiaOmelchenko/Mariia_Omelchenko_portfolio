@@ -105,7 +105,10 @@ footer {
 
 .accordion:hover {
     background-image: linear-gradient(45deg, #6a82fb, #fc5c7d);
-    /*background-color: #005f99;*/
+}
+
+.accordion.active {
+    background-image: linear-gradient(45deg, #fc5c7d, #6a82fb);
 }
 
 .panel {
@@ -114,6 +117,7 @@ footer {
     display: none;
     overflow: hidden;
     border: 1px solid #007acc;
+    transition: max-height 0.3s ease-out;
 }
 
 .panel p {
@@ -165,14 +169,14 @@ footer {
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 10px; 
-    margin-top: 10px; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .gallery-image {
-    width: 100px; 
+    width: 150px; 
     height: auto; 
     border-radius: 5px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
